@@ -24,7 +24,7 @@ Install and Configure hstr to have a better shell history search
 
 ## Requirements
 
-none
+- lotusnoir.system_repo_epel
 
 ## Role variables
 

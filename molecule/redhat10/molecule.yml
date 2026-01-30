@@ -6,7 +6,7 @@ driver:
   name: docker
 
 scenario:
-  name: oraclelinux10
+  name: redhat10
   test_sequence:
     - dependency
     - cleanup
@@ -21,8 +21,8 @@ scenario:
     - destroy
 
 platforms:
-  - name: apps-hstr-oraclelinux10
-    image: lotusnoir/ansible_molecule_test_images:oraclelinux10
+  - name: apps-hstr-redhat10
+    image: lotusnoir/ansible_molecule_test_images:redhat10
     command: ${MOLECULE_DOCKER_COMMAND:-""}
     cgroupns_mode: host
     pre_build_image: true
